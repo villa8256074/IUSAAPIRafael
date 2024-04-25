@@ -1,0 +1,24 @@
+{
+  "name": "apiiusa",
+  "version": "1.0.0",
+  "description": "Conexion de API en nodejs con express hacia Base de datos y consumo de servicio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon devfetch.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RafaelVilla",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "express-useragent": "^1.0.15",
+    "mongoose": "^8.3.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

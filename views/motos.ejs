@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IUSA Demo API</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="../resources/css/style.css">
+    </head>
+
+    <body>
+        <h1 style="text-align: center;"><%= title %></h1>
+        <div class="signupFrm">
+
+        
+
+    <table class="styled-table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID moto</th>
+            <th scope="col">Motor</th>
+            <th scope="col">Bateria 1</th>
+            <th scope="col">Bateria 2</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        <% if (motos.length > 0) { %>
+            <% motos.forEach(moto => {  %>
+                <tr>
+                    <th scope="row"><%= moto.idMoto %></th>
+                    <td><%= moto.idMoto %> </td>
+                    <td><%= moto.moto %></td>
+                    <td><%= moto.bateria1 %></td>
+                    <td><%= moto.bateria2 %></td>
+                  </tr>
+            <% }) %>
+        <% } %>
+        </tbody>
+      </table>
+
+    </div>
+
+    </body>
+</html>
